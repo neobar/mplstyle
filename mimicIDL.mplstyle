@@ -1,6 +1,5 @@
 # More on http://matplotlib.org/users/customizing.html
 # Part of the configuration comes from http://space.mit.edu/~turnerm/python.html
-# Customized style context
 
 figure.figsize: 8, 6
 
@@ -10,7 +9,7 @@ figure.figsize: 8, 6
 # 3. Handled by Tex, if 'text.usetex: True' is set.
 # The configuration of Tex content is
 # http://stackoverflow.com/questions/2537868/sans-serif-math-with-latex-in-matplotlib
-# 
+#
 # Note that many fonts lack the symbol 'proporthional to' (\propto) except STIXGeneral and Times.
 # But Times New Roman does not have \propto symbol.
 font.serif: Cambriai, Times New Roman,DejaVu Serif
