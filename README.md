@@ -16,5 +16,5 @@ cd mplstyle
 
 mkdir -p /home/foobar/.config/matplotlib/mplstyle
 
-cp mimicIDL.mplstyle /home/foobar/.config/matplotlib/mplstyle
+cp mimicIDL.mplstyle /home/foobar/.config/matplotlib/mplstyle/
 ```
