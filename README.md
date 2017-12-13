@@ -11,7 +11,10 @@ Out[3]: '/home/foobar/.config/matplotlib'
 
 ``
 git clone https://github.com/neobar/mplstyle.git
+
 cd mplstyle
+
 mkdir -p /home/foobar/.config/matplotlib/mplstyle
+
 cp mimicIDL.mplstyle /home/foobar/.config/matplotlib/mplstyle
 ``
