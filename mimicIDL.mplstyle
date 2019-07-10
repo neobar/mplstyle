@@ -84,7 +84,6 @@ ytick.major.pad: 9.1
 savefig.bbox: tight
 savefig.dpi: 400
 savefig.transparent: True
-savefig.frameon: False
 # Simplify paths by removing "invisible" points, useful for reducing
 # file size when plotting a large number of points
 path.simplify: True
