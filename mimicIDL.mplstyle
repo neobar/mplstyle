@@ -10,10 +10,10 @@ figure.figsize: 8, 6
 # 3. Handled by Tex, if 'text.usetex: True' is set.
 # The configuration of Tex content is
 # http://stackoverflow.com/questions/2537868/sans-serif-math-with-latex-in-matplotlib
-# 
+#
 # Note that many fonts lack the symbol 'proporthional to' (\propto) except STIXGeneral and Times.
 # But Times New Roman does not have \propto symbol.
-font.serif: Baskerville, Times, DejaVu Serif, Cambriai
+font.serif: DejaVu Serif, Times, Cambriai
 font.family: serif
 # Microsoft fonts for Centos. http://mscorefonts2.sourceforge.net
 # Two reasons to choose 'serif' over 'sans serif'
@@ -35,7 +35,7 @@ mathtext.sf: sans
 mathtext.rm: serif
 mathtext.it: serif: italic
 mathtext.bf: serif: bold
-mathtext.fallback_to_cm : True
+#mathtext.fallback_to_cm : True
 # Some symbols might be missing in the specified font. The symbols from Computer Modern will be used.
 # Otherwise, a dummy symbol will be used.
 
