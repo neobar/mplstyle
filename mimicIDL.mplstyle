@@ -13,7 +13,7 @@ figure.figsize: 8, 6
 #
 # Note that many fonts lack the symbol 'proporthional to' (\propto) except STIXGeneral and Times.
 # But Times New Roman does not have \propto symbol.
-font.serif: DejaVu Serif, Times, Cambriai
+font.serif: Times, DejaVu Serif
 font.family: serif
 # Microsoft fonts for Centos. http://mscorefonts2.sourceforge.net
 # Two reasons to choose 'serif' over 'sans serif'
