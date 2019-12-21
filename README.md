@@ -7,7 +7,7 @@
 In [2]: import matplotlib as mpl
 
 In [3]: mpl.get_configdir()
-Out[3]: '/home/foobar/.config/matplotlib'
+Out[3]: '/home/foobar/.matplotlib'
 ```
 
 ### Copy style sheet to configuration directory
