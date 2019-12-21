@@ -17,7 +17,7 @@ git clone https://github.com/neobar/mplstyle.git
 
 cd mplstyle
 
-mkdir -p /home/foobar/.config/matplotlib/mplstyle
+mkdir -p /home/foobar/.matplotlib/stylelib
 
-cp mimicIDL.mplstyle /home/foobar/.config/matplotlib/mplstyle/
+cp mimicIDL.mplstyle /home/foobar/.matplotlib/stylelib/
 ```
