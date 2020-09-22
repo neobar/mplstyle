@@ -86,4 +86,8 @@ savefig.dpi: 400
 savefig.transparent: True
 # Simplify paths by removing "invisible" points, useful for reducing
 # file size when plotting a large number of points
+
+pdf.fonttype: 42
+ps.fonttype: 42
+
 path.simplify: True
