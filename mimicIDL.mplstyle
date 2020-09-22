@@ -12,8 +12,9 @@ figure.figsize: 8, 6
 # http://stackoverflow.com/questions/2537868/sans-serif-math-with-latex-in-matplotlib
 #
 # Note that many fonts lack the symbol 'proporthional to' (\propto) except STIXGeneral and Times.
-# But Times New Roman does not have \propto symbol.
-font.serif: Times, DejaVu Serif
+# But Times New Roman does not have \propto symbol. If Times in Mac is used, the math does not italic.
+#font.serif: Times, DejaVu Serif
+font.serif: Times New Roman, Times
 font.family: serif
 # Microsoft fonts for Centos. http://mscorefonts2.sourceforge.net
 # Two reasons to choose 'serif' over 'sans serif'
