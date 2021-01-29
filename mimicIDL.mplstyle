@@ -15,7 +15,7 @@ figure.figsize: 8, 6
 # But Times New Roman does not have \propto symbol. If Times in Mac is used, the math does not italic.
 #font.serif: Times, DejaVu Serif
 font.serif: Times New Roman, Times
-font.family: serif
+font.family: sans serif
 # Microsoft fonts for Centos. http://mscorefonts2.sourceforge.net
 # Two reasons to choose 'serif' over 'sans serif'
 # 1. Tradition
@@ -23,7 +23,7 @@ font.family: serif
 # Delete font cache(~/.matplotlib/fontList.cache or ~/.cache/matplotlib/fontList.cache)
 # to enforce Matplotlib to generate new font list if new fonts are added to the system.
 
-mathtext.fontset: custom
+mathtext.fontset: dejavusans
 mathtext.default: it
 
 # Linux systems usually have not cursive family. Fonts of Mac or Microsoft need to be installed.
