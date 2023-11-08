@@ -25,4 +25,6 @@ cp mimicIDL.mplstyle /home/foobar/.matplotlib/stylelib/
 ## Custom CSS
 
 #### Use full width in jupyter-notebook
-See https://stackoverflow.com/questions/77030544/how-do-i-increase-the-cell-width-of-the-jupyter-version-7
+See 
+* https://stackoverflow.com/questions/77030544/how-do-i-increase-the-cell-width-of-the-jupyter-version-7
+* https://stackoverflow.com/questions/21971449/how-do-i-increase-the-cell-width-of-the-jupyter-ipython-notebook-in-my-browser
