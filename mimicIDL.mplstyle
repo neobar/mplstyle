@@ -1,94 +1,141 @@
-# More on http://matplotlib.org/users/customizing.html
-# Part of the configuration comes from http://space.mit.edu/~turnerm/python.html
-# Customized style context
+# ============================================================
+# IDL-like Matplotlib Style
+# For scientific / astronomical plots
+# ============================================================
 
+# ------------------------------------------------------------
+# Figure
+# ------------------------------------------------------------
 figure.figsize: 8, 6
+figure.dpi: 100
+figure.facecolor: white
 
-# There are three types of parameters.
-# 1. Regular text
-# 2. Matplotlib internal Tex (mathtext)
-# 3. Handled by Tex, if 'text.usetex: True' is set.
-# The configuration of Tex content is
-# http://stackoverflow.com/questions/2537868/sans-serif-math-with-latex-in-matplotlib
-#
-# Note that many fonts lack the symbol 'proporthional to' (\propto) except STIXGeneral and Times.
-# But Times New Roman does not have \propto symbol. If Times in Mac is used, the math does not italic.
-#font.serif: Times, DejaVu Serif
-font.serif: Times New Roman, Times
-font.family: sans serif
-# Microsoft fonts for Centos. http://mscorefonts2.sourceforge.net
-# Two reasons to choose 'serif' over 'sans serif'
-# 1. Tradition
-# 2. 'serif' is generally more readable than 'sans serif'
-# Delete font cache(~/.matplotlib/fontList.cache or ~/.cache/matplotlib/fontList.cache)
-# to enforce Matplotlib to generate new font list if new fonts are added to the system.
+# ------------------------------------------------------------
+# Font
+# ------------------------------------------------------------
+font.family: serif
+font.serif: Times New Roman, Times, STIXGeneral, DejaVu Serif
 
-mathtext.fontset: dejavusans
-mathtext.default: it
-
-# Linux systems usually have not cursive family. Fonts of Mac or Microsoft need to be installed.
-# A important point is that these fonts have to be installed in system fonts directory,
-# instead of user local directory.
-mathtext.cal: cursive
-
-mathtext.tt: monospace
-mathtext.sf: sans
-mathtext.rm: serif
-mathtext.it: serif: italic
-mathtext.bf: serif: bold
-#mathtext.fallback_to_cm : True
-# Some symbols might be missing in the specified font. The symbols from Computer Modern will be used.
-# Otherwise, a dummy symbol will be used.
-
-axes.labelsize: 24
-axes.titlesize: 20
-axes.linewidth: 1.75
-#axes.grid: True
-xtick.labelsize: 18
-ytick.labelsize: 18
-legend.fontsize: 20
-#legend.framealpha: 0.0
-legend.numpoints: 1
-legend.frameon: False
-legend.loc: best
-legend.handletextpad: 0.3
 text.color: black
 text.usetex: False
-text.latex.preamble: \usepackage{amsmath},\usepackage{xspace},\usepackage{bm}
 
+mathtext.fontset: stix
+mathtext.default: it
+mathtext.rm: STIXGeneral
+mathtext.it: STIXGeneral:italic
+mathtext.bf: STIXGeneral:bold
+mathtext.cal: STIXGeneral
+mathtext.sf: STIXSans
+mathtext.tt: STIXGeneral
 
-grid.linewidth: 1.3
-lines.linewidth: 2.0
-patch.linewidth: 0.39
-lines.markersize: 9.1
-#lines.markeredgewidth: 0
+# ------------------------------------------------------------
+# Axes
+# ------------------------------------------------------------
+axes.labelsize: 24
+axes.titlesize: 22
+axes.linewidth: 1.8
+axes.edgecolor: black
+axes.facecolor: white
 
-xtick.major.size: 6
-ytick.major.size: 6
-xtick.minor.size: 3
-ytick.minor.size: 3
-xtick.major.width: 1
-ytick.major.width: 1
-xtick.minor.width: 1
-ytick.minor.width: 1
+axes.grid: False
+axes.axisbelow: False
+
+# IDL-like color cycle
+axes.prop_cycle: cycler('color', ['000000', 'd62728', '1f77b4', '2ca02c', '9467bd', 'ff7f0e', '17becf', '8c564b'])
+
+# ------------------------------------------------------------
+# Lines and markers
+# ------------------------------------------------------------
+lines.linewidth: 2.2
+lines.markersize: 8.5
+lines.markeredgewidth: 1.3
+
+patch.linewidth: 0.8
+patch.edgecolor: black
+
+# ------------------------------------------------------------
+# Ticks
+# ------------------------------------------------------------
 xtick.direction: in
 ytick.direction: in
 
-# Show ticks in both sides.
 xtick.top: True
 ytick.right: True
 
+xtick.labelsize: 18
+ytick.labelsize: 18
 
-xtick.major.pad: 9.1
-ytick.major.pad: 9.1
+xtick.major.size: 8
+ytick.major.size: 8
+xtick.minor.size: 4
+ytick.minor.size: 4
 
+xtick.major.width: 1.5
+ytick.major.width: 1.5
+xtick.minor.width: 1.2
+ytick.minor.width: 1.2
+
+xtick.major.pad: 8
+ytick.major.pad: 8
+
+xtick.color: black
+ytick.color: black
+
+# ------------------------------------------------------------
+# Minor ticks
+# ------------------------------------------------------------
+xtick.minor.visible: True
+ytick.minor.visible: True
+
+# ------------------------------------------------------------
+# Legend
+# ------------------------------------------------------------
+legend.fontsize: 19
+legend.frameon: False
+legend.numpoints: 1
+legend.scatterpoints: 1
+legend.loc: best
+legend.handlelength: 1.8
+legend.handletextpad: 0.4
+legend.borderaxespad: 0.5
+legend.labelspacing: 0.35
+
+# ------------------------------------------------------------
+# Grid
+# ------------------------------------------------------------
+grid.color: black
+grid.linestyle: --
+grid.linewidth: 0.8
+grid.alpha: 0.35
+
+# ------------------------------------------------------------
+# Error bars
+# ------------------------------------------------------------
+errorbar.capsize: 0
+
+# ------------------------------------------------------------
+# Image display
+# ------------------------------------------------------------
+image.cmap: gray
+image.origin: lower
+image.interpolation: nearest
+
+# ------------------------------------------------------------
+# Savefig
+# ------------------------------------------------------------
+savefig.dpi: 150
 savefig.bbox: tight
-savefig.dpi: 100
-savefig.transparent: True
-# Simplify paths by removing "invisible" points, useful for reducing
-# file size when plotting a large number of points
+savefig.pad_inches: 0.05
+savefig.transparent: False
+savefig.facecolor: white
+savefig.edgecolor: white
 
 pdf.fonttype: 42
 ps.fonttype: 42
+svg.fonttype: none
 
+# ------------------------------------------------------------
+# Path simplification
+# ------------------------------------------------------------
 path.simplify: True
+path.simplify_threshold: 0.111111
