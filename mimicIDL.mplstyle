@@ -9,24 +9,19 @@
 figure.figsize: 8, 6
 figure.dpi: 100
 figure.facecolor: white
+figure.subplot.bottom: 0.16
 
 # ------------------------------------------------------------
 # Font
 # ------------------------------------------------------------
-font.family: serif
-font.serif: Times New Roman, Times, STIXGeneral, DejaVu Serif
+# Use bundled sans-serif fonts to approximate the look of Hershey Simplex Roman.
+font.family: DejaVu Sans
 
 text.color: black
 text.usetex: False
 
-mathtext.fontset: stix
+mathtext.fontset: dejavusans
 mathtext.default: it
-mathtext.rm: STIXGeneral
-mathtext.it: STIXGeneral:italic
-mathtext.bf: STIXGeneral:bold
-mathtext.cal: STIXGeneral
-mathtext.sf: STIXSans
-mathtext.tt: STIXGeneral
 
 # ------------------------------------------------------------
 # Axes
@@ -39,8 +34,10 @@ axes.facecolor: white
 
 axes.grid: False
 axes.axisbelow: False
+axes.autolimit_mode: round_numbers
+axes.xmargin: 0
 
-# IDL-like color cycle
+# Start with black, then cycle through colors for additional series.
 axes.prop_cycle: cycler('color', ['000000', 'd62728', '1f77b4', '2ca02c', '9467bd', 'ff7f0e', '17becf', '8c564b'])
 
 # ------------------------------------------------------------
@@ -124,7 +121,7 @@ image.interpolation: nearest
 # Savefig
 # ------------------------------------------------------------
 savefig.dpi: 150
-savefig.bbox: tight
+savefig.bbox: standard
 savefig.pad_inches: 0.05
 savefig.transparent: False
 savefig.facecolor: white
